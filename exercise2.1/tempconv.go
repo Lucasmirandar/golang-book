@@ -1,4 +1,4 @@
-//Pacote tempconv realiza conversões de Celsius e Fahrenheit.
+//Pacote tempconv realiza conversões de Celsius, Fahrenheit e Kelvin.
 package tempconv
 
 import "fmt"
@@ -23,14 +23,14 @@ func CToF(c Celsius) Fahrenheit { return Fahrenheit(c*9/5 + 32) }
 //FToC converte uma temperatuda em Fahrenheit para Celsius
 func FToC(f Fahrenheit) Celsius { return Celsius((f - 32) * 5 / 9) }
 
-//CToK
+//CToK converte uma temperatura em Celsius para Kelvin
 func CToK(c Celsius) Kelvin { return Kelvin(c - 273.0) }
 
-//KToC
+//KToC converte uma temperatuda em Kelvin para Celsius
 func KToC(k Kelvin) Celsius { return Celsius(k + 273) }
 
-//FToK
+//FToK converte uma temperatuda em Fahrenheit para Kelvin
 func FToK(f Fahrenheit) Kelvin { return Kelvin((f-32)*5/9) + 273.372 }
 
-//KtoF
+//KtoF converte uma temperatuda em Kelvin para Fahrenheit
 func KToF(k Kelvin) Fahrenheit { return Fahrenheit(k-273.15)*9/5 + 32 }
