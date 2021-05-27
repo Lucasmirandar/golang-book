@@ -1,4 +1,4 @@
-//conv converte seu argumento numérico para Celsius, Fahrenheit, Pés, Metros, Quilos e Libras.
+//conv converte seu argumento numérico para Celsius, Fahrenheit, Kelvin, Pés, Metros, Quilos e Libras.
 package main
 
 import (
